@@ -1,6 +1,5 @@
 const net = require("net");
 const connect = require("./client");
-
 const conn = connect()
 
 
@@ -22,7 +21,7 @@ const handleUserInput = function (key) {
     connect.write("Move: right");
   }
   if (key === "p") {
-    connect.write("Move: hello");
+    connect.write("say: hello");
   }
 };
 
